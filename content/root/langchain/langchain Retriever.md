@@ -1,15 +1,11 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月4日 , 20:29 , 2025
+date modified: 12月4日 , 20:34 , 2025
 ---
 
 ## 检索器
 
-### 向量
-
-[[langchain vector store]]
-
-#### `BaseRetriever`
+### `BaseRetriever`
 
 ```python
 
@@ -73,7 +69,7 @@ date modified: 12月4日 , 20:29 , 2025
 
 例如->
 
-#### `VectorStoreRetriever` 
+### `VectorStoreRetriever` 
 
 ```python
  def _get_relevant_documents(
