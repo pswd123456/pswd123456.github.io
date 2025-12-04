@@ -1,3 +1,3 @@
 ---
-title: Welcome to Quartz
+title: Note
 ---
