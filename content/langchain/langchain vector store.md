@@ -1,13 +1,13 @@
 ---
-date created: 12月4日 , 17:9 , 2025
-date modified: 12月4日 , 17:32 , 2025
+date created: 12月4日 , 19:47 , 2025
+date modified: 12月4日 , 19:59 , 2025
 ---
 
-# langchain vector store
+## langchain vector store
 
-## `InMemoryVectorStore`
+### `InMemoryVectorStore`
 
-### `__init__`
+#### `__init__`
 
 ```python
 self.store: dict[str, dict[str, Any]] = {}
@@ -15,7 +15,7 @@ self.store: dict[str, dict[str, Any]] = {}
 
 模拟了 `索引, vector` 的结构, 每一条包含了在向量空间的`dense`权重
 
-### `add_documents`
+#### `add_documents`
 
 ```python
 self.store[doc_id_] = {
@@ -35,7 +35,7 @@ self.store[doc_id_] = {
 
 metadata可能存了什么信息? 可以是doc_source, author, 或者created_date等等, 方便检索时过滤信息
 
-## `_similarity_search_with_score_by_vector`
+### `_similarity_search_with_score_by_vector`
 
 如何计算similarity的? ->
 
