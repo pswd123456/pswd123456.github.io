@@ -1,16 +1,13 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月4日 , 22:11 , 2025
+date modified: 12月4日 , 22:21 , 2025
 ---
-
-## langchain text splitter
-### langchain text splitter
 
 在`base`类中定义了`chunk_size`和`chunk_overlap`, 这通常也是我们从`RecursiveCharacterTextSplitter`开始时最关心的两个参数, 
 
 `_merge_splits`负责将切碎的小块粘合至快要超过`chunk_size`为止
 
-#### `RecursiveCharacterTextSplitter`
+## `RecursiveCharacterTextSplitter`
 
 ```python
 def _split_text(self, text: str, separators: list[str]) -> list[str]:

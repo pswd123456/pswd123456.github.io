@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月4日 , 22:13 , 2025
+date modified: 12月4日 , 22:20 , 2025
 ---
 
 ## 检索器
@@ -91,4 +91,4 @@ date modified: 12月4日 , 22:13 , 2025
             return docs
 ```
 
-将 [[langchain vector store]] 提供的相似度搜索返回docs
+将 [[langchain VectorStore]] 提供的相似度搜索返回docs
