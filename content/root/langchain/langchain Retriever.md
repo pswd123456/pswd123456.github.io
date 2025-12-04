@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月4日 , 20:34 , 2025
+date modified: 12月4日 , 22:13 , 2025
 ---
 
 ## 检索器
@@ -64,6 +64,8 @@ date modified: 12月4日 , 20:34 , 2025
         return result
         
 ```
+
+`BaseRetriever`继承自[[Runnables]]
 
 可以看到, `BaseRetriever`规定了customRetriever的子类必须有_get_relevant_documents这个方法
 
