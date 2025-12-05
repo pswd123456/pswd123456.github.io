@@ -1,6 +1,6 @@
 ---
 date created: 12月5日 , 9:50 , 2025
-date modified: 12月5日 , 12:56 , 2025
+date modified: 12月5日 , 15:50 , 2025
 ---
 
 ## ChatPromptTemplate
@@ -109,15 +109,17 @@ prompt.invoke({
 ]
 ```
 
-- *[[message#如果传入list of str?]]
+- *[[message#如果传入list of str?]] 而不是一个message对象?
 
-### 如何在LCEL中传入MessagePlaceholder?
+### 如何在LCEL chain中将变量传入MessagePlaceholder?
 
 使用 [[RunnablePassthrough]]
 
 ### Langfuse prompt管理
 
-在Langfuse创建Prompt时选择 `chat` 而不是 `text` 只有前者会正确的转化成 [[message]] 表现成JSON格式
+>[!TIP]
+在Langfuse创建Prompt时选择 `chat` 而不是 `text` 
+前者会正确的转化成 [[message]] 对象, 正确转化成JSON格式
 
 ```JSON
 [

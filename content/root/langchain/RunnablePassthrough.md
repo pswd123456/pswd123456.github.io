@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 21:29 , 2025
-date modified: 12月5日 , 10:45 , 2025
+date modified: 12月5日 , 16:10 , 2025
 ---
 
 ```python
@@ -118,9 +118,8 @@ def call_func_with_variable_args(
 
 下游可能需要的:
 
-```
-config -> 需要metadata\tags\recursion_limit
-run_manager -> 需要流式输出token\中间步骤
-```
+[[RunnableConfig]] -> 需要metadata\tags\recursion_limit
+
+[[RunManager]] -> 需要流式输出token\中间步骤
 
 `RunnablePassthrough` 的`self.func`接受Callable, 也就是任何函数

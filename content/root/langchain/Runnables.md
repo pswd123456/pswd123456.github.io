@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 21:10 , 2025
-date modified: 12月5日 , 12:58 , 2025
+date modified: 12月5日 , 16:40 , 2025
 ---
 
 ## Runnables
@@ -105,3 +105,5 @@ Batch会按顺序的运行
 
     `RunnableSequence` in order.
 ```
+
+基类的 `batch` **并不是**简单的 `for` 循环调用 `invoke`。为了提高 IO 密集型任务（如调 LLM API）的效率，它默认使用了 `ThreadPoolExecutor`（线程池）。Batch会根据 `config` 中的 `max_concurrency` 参数决定开启多少个线程

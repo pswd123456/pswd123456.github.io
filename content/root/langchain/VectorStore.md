@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月5日 , 10:48 , 2025
+date modified: 12月5日 , 13:56 , 2025
 ---
 
 ## langchain vector store
@@ -33,7 +33,9 @@ self.store[doc_id_] = {
 
 存进了id和chunk原文以及metadata, 方便retrieval给出doc_id返回text和metadata
 
-metadata可能存了什么信息? 可以是doc_source, author, 或者created_date等等, 方便检索时过滤信息
+- metadata可能存了什么信息? 
+	- 可以是doc_source, author, 或者created_date等等, 
+	- 方便检索时过滤信息, 实操的过程中也常常自定义metadata用以高级检索
 
 ### `_similarity_search_with_score_by_vector`
 
@@ -51,7 +53,7 @@ top_k_idx = similarity.argsort()[::-1][:k]
 
 返回topk
 
-cosine比较就类似于二维向量计算cosine角的算法, 只不过拓展到指定维度, 这个值通常在 -1, 1之间, 越大表示向量越相关
+cosine比较就类似于二维向量计算cosine角的算法, 只不过拓展到指定维度, 这个值通常在 `-1, 1` 之间, 越靠近1表示向量越相关
 
 可以参见 ->  `utils.py` -> `_cosine_similarity`
 
