@@ -1,6 +1,6 @@
 ---
 date created: 12月5日 , 9:50 , 2025
-date modified: 12月5日 , 15:50 , 2025
+date modified: 12月5日 , 19:35 , 2025
 ---
 
 ## ChatPromptTemplate
@@ -118,8 +118,9 @@ prompt.invoke({
 ### Langfuse prompt管理
 
 >[!TIP]
-在Langfuse创建Prompt时选择 `chat` 而不是 `text` 
-前者会正确的转化成 [[message]] 对象, 正确转化成JSON格式
+>
+>在Langfuse创建Prompt时选择 `chat` 而不是 `text` 
+>前者会正确的转化成 [[message]] 对象, 正确转化成JSON格式
 
 ```JSON
 [
