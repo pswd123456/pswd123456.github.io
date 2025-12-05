@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月4日 , 22:21 , 2025
+date modified: 12月5日 , 10:48 , 2025
 ---
 
 在`base`类中定义了`chunk_size`和`chunk_overlap`, 这通常也是我们从`RecursiveCharacterTextSplitter`开始时最关心的两个参数, 

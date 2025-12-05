@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 21:29 , 2025
-date modified: 12月4日 , 22:21 , 2025
+date modified: 12月5日 , 10:45 , 2025
 ---
 
 ```python
@@ -27,7 +27,32 @@ date modified: 12月4日 , 22:21 , 2025
 
 func做什么用的? -> 让input跑一遍, 无论是打印日志, 还是记录, 还是需要取出input
 
-总之是一个工具函数, 确保下游获得所需要的内容:
+```
+Input (数据)
+         │
+         ▼
++-------------------------+
+|   RunnablePassthrough   |
+|                         |
+|   1. 把 Input 给 func   | ---> func(Input) 执行 (比如打印日志)
+|      (结果被丢弃)       |
+|                         |
+|   2. 返回 Input         |
++-------------------------+
+         │
+         ▼
+   Input (数据原样输出)
+```
+
+`call_func_with_variable_args`总之是一个工具函数, 确保下游获得所需要的内容:
+
+```
+ Call function that may optionally accept a run_manager and/or config.
+ 
+ Returns:
+
+        The output of the function.
+```
 
 ```python
 def call_func_with_variable_args(

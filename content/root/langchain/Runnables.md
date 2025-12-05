@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 21:10 , 2025
-date modified: 12月4日 , 22:24 , 2025
+date modified: 12月5日 , 10:49 , 2025
 ---
 
 ## Runnables
@@ -32,8 +32,6 @@ dict to `RunnableParallel`.
 Docstring 对 runnable 包括 `"|"`符号的解释
 
 `"|"` 是` __or__` ([[魔术方法]]) 实现的 ->
-
-[[RunnableLambda]] 将函数wrap成runnable<- 使用 `@chain` 装饰器
 
 ```python
 @override
@@ -98,6 +96,8 @@ Docstring 对 runnable 包括 `"|"`符号的解释
     `Runnable`.
 ```
 
+ where either the left or right operands (or both) must be a **Runnable:** [[RunnableLambda]] 将函数wrap成runnable<- 使用 `@chain` 装饰器
+
 Batch会按顺序的运行
 
 ```
@@ -106,4 +106,12 @@ Batch会按顺序的运行
     `RunnableSequence` in order.
 ```
 
- [[RunnablePassthrough]] 通常用于透传一些数据, 例如prompt的placeholder有时候依赖这个传进去
+### [[RunnablePassthrough]] 
+
+通常用于透传一些数据, 例如 [[Prompts]] 的 `MessagesPlaceholder` 有时候依赖这个传进去
+
+### [[OutputParser]]
+
+一个标准的 RAG 链条就是这样闭环的：
+
+**`Prompt` (组装 Message 对象) -> `LLM` (吃 Message，吐 AIMessage) -> `OutputParser` (吃 AIMessage，吐 String)**
