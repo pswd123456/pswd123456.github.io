@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 21:10 , 2025
-date modified: 12月5日 , 10:49 , 2025
+date modified: 12月5日 , 12:58 , 2025
 ---
 
 ## Runnables
@@ -105,13 +105,3 @@ Batch会按顺序的运行
 
     `RunnableSequence` in order.
 ```
-
-### [[RunnablePassthrough]] 
-
-通常用于透传一些数据, 例如 [[Prompts]] 的 `MessagesPlaceholder` 有时候依赖这个传进去
-
-### [[OutputParser]]
-
-一个标准的 RAG 链条就是这样闭环的：
-
-**`Prompt` (组装 Message 对象) -> `LLM` (吃 Message，吐 AIMessage) -> `OutputParser` (吃 AIMessage，吐 String)**

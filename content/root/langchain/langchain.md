@@ -1,21 +1,13 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月5日 , 10:48 , 2025
+date modified: 12月5日 , 12:58 , 2025
 ---
 
 ## langchain
 
-### 切割器
+### 一个标准的 RAG 链条就是这样闭环的
 
-[[TextSplitter]]
-
-### 检索器
-
-[[Retriever]]
-
-### LCEL(langchain expression language)
-
-[[Runnables]]
+[[Prompts]] (组装 Message 对象) -> LCLE chain [[Runnables]] (吃 Message，吐 AIMessage) -> [[TextSplitter]] -> [[Retriever]] -> [[OutputParser]] (吃 AIMessage，吐 String)
 
 > [!NOTE]
 > 仅包含以下文件的内容

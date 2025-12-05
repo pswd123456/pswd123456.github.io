@@ -1,6 +1,6 @@
 ---
 date created: 12月5日 , 9:50 , 2025
-date modified: 12月5日 , 10:48 , 2025
+date modified: 12月5日 , 12:56 , 2025
 ---
 
 ## ChatPromptTemplate
@@ -114,3 +114,18 @@ prompt.invoke({
 ### 如何在LCEL中传入MessagePlaceholder?
 
 使用 [[RunnablePassthrough]]
+
+### Langfuse prompt管理
+
+在Langfuse创建Prompt时选择 `chat` 而不是 `text` 只有前者会正确的转化成 [[message]] 表现成JSON格式
+
+```JSON
+[
+  {"role": "system", "content": "你是一个助手"},
+  {"role": "user", "content": "你好"},
+  {"role": "assistant", "content": "你好！有什么我可以帮你的？"},
+  {"role": "user", "content": "下一个问题"}
+]
+```
+
+现在有一些model会调高system的权重, 原生支持JSON
