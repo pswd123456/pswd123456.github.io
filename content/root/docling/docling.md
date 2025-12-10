@@ -1,10 +1,8 @@
 ---
 date created: 12月7日 , 14:22 , 2025
-date modified: 12月7日 , 18:7 , 2025
+date modified: 12月9日 , 16:41 , 2025
 ---
 
-> [!WARNING]
-> 包含AI整理的内容
 ## 第一阶段：总入口与门面 (The Entry Point)
 
 目标：理解库是如何被启动的，以及它是如何自动判断文件类型的。

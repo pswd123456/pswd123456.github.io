@@ -1,6 +1,6 @@
 ---
 date created: 12月5日 , 19:35 , 2025
-date modified: 12月5日 , 20:12 , 2025
+date modified: 12月10日 , 16:5 , 2025
 ---
 
 ## 语义切分
@@ -23,3 +23,5 @@ token消耗会是原始文本的二到四倍,
 第二, 如果一个巨大的段落全都在说一件事情(假设在embeddings里都映射到一块了, 但是这可能吗?), 最后还是要按其他组件的token限制切
 
 所以semantic chunking一般不会单独使用
+
+而且如果用docling的视觉模型识别layout效果会比用sematic chunking来的好一些, 使用父子索引的情况下无需再二次使用语义切分, 因为一两百token的子块的量级怎么切其实影响都不太大

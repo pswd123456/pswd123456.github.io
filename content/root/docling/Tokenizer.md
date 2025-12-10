@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 17:6 , 2025
-date modified: 12月7日 , 18:8 , 2025
+date modified: 12月9日 , 14:33 , 2025
 ---
 
 `HybridChunker` 的工作机制非常依赖 `tokenizer` 来确保切分出的文本块（Chunk）能够被你的 Embedding 模型（即 `paraphrase-multilingual-MiniLM-L12-v2`）完美消化。

@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 15:20 , 2025
-date modified: 12月7日 , 18:7 , 2025
+date modified: 12月8日 , 19:40 , 2025
 ---
 
 `docling/document_converter.py` 是 `docling` 库的**核心入口文件**，也是你作为使用者打交道最多的地方。它扮演着“指挥官”的角色，负责接收你的文件，自动分发给正确的处理流水线（Pipeline），并返回结果  -> 转化好的 `DoclingDocument`
