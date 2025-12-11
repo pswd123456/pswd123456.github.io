@@ -1,6 +1,6 @@
 ---
 date created: 12月8日 , 15:1 , 2025
-date modified: 12月9日 , 14:32 , 2025
+date modified: 12月10日 , 16:20 , 2025
 ---
 
 将 CallbackHandler 实例化后传入Runnables 的 [[RunnableConfig]] 
@@ -16,4 +16,5 @@ date modified: 12月9日 , 14:32 , 2025
 注意使用chat模式而不是text模式
 
 ## experiment和dataset
+
 默认需要dataset是langchain document格式

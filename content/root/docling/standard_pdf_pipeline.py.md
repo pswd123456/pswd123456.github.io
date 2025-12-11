@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 15:21 , 2025
-date modified: 12月7日 , 18:27 , 2025
+date modified: 12月11日 , 22:59 , 2025
 ---
 
 第四阶段我们进入“引擎室”，剖析 `docling` 最核心的 **`StandardPdfPipeline`**。
@@ -118,7 +118,7 @@ PDF 处理是计算密集型（OCR、模型推理）和 I/O 密集型（读取�
 - **置信度计算**：统计全文档的 OCR 和布局识别置信度，让你知道结果有多靠谱。
     
 
-## 总结：第四阶段的学习价值
+## 总结
 
 深入理解 `StandardPdfPipeline` 能让你明白：
 

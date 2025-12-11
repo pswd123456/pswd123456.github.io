@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 17:1 , 2025
-date modified: 12月7日 , 18:7 , 2025
+date modified: 12月11日 , 22:59 , 2025
 ---
 
 `HybridChunker` 是 Docling 库中用于 **文档分块 (Chunking)** 的核心工具，特别为 RAG (检索增强生成) 场景设计。
