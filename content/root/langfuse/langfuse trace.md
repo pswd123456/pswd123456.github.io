@@ -1,11 +1,11 @@
 ---
 date created: 12月8日 , 15:1 , 2025
-date modified: 12月10日 , 16:20 , 2025
+date modified: 12月12日 , 0:19 , 2025
 ---
 
 将 CallbackHandler 实例化后传入Runnables 的 [[RunnableConfig]] 
 
-在chain invoke的时候作为config传入即可
+在chain invoke的时候作为 [[RunnableConfig]] 传入即可
 
 ## @observe
 
