@@ -1,6 +1,6 @@
 ---
 date created: 12月11日 , 21:58 , 2025
-date modified: 12月11日 , 23:51 , 2025
+date modified: 12月12日 , 0:13 , 2025
 ---
 
 ## 第一阶段：[[核心入口与数据契约]] (Getting Started)
@@ -49,6 +49,8 @@ date modified: 12月11日 , 23:51 , 2025
     - `MetricWithLLM`：了解大多数指标（如 Faithfulness, Answer Relevancy）都需要绑定一个 `llm` 对象。
         
 - **为了使用**：当你自定义指标或者调试现成指标时，检查 `required_columns` 是第一步。
+
+关于我在项目中使用的metrics: [[ragas metrics]]
 
 ---
 
