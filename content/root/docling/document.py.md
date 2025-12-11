@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 15:24 , 2025
-date modified: 12月11日 , 22:59 , 2025
+date modified: 12月12日 , 0:11 , 2025
 ---
 
 第三阶段的核心是 **数据模型 (Data Models)**，即“输入是什么”以及“输出长什么样”。
@@ -41,6 +41,8 @@ date modified: 12月11日 , 22:59 , 2025
     - **这是最核心的资产**。它是一个树状结构的文档对象，包含了标题、段落、表格、KV对等所有识别出的内容。
         
     - 你要导出 Markdown (`export_to_markdown`) 或 JSON (`export_to_dict`) 都是找它要。
+      
+    - [[Hybridchunker]] 是一种根据doclingDocument对象识别出的layout切割的工具, 可以插入识别出的headings
         
 - **`pages` (`List[Page]`)**：
     
