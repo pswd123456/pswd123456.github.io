@@ -1,6 +1,6 @@
 ---
 date created: 12月4日 , 19:47 , 2025
-date modified: 12月12日 , 23:11 , 2025
+date modified: 12月12日 , 23:29 , 2025
 ---
 
 在`base`类中定义了`chunk_size`和`chunk_overlap`, 这通常也是我们从`RecursiveCharacterTextSplitter`开始时最关心的两个参数, 
@@ -50,3 +50,5 @@ def _split_text(self, text: str, separators: list[str]) -> list[str]:
 会遍历 `separators` 直到 `' '`或者这个单词太大只能切断为止
 
 [[docling]]提供了一种基于视觉方案的段落切割, 会尽可能的避免切断段落\表格\以及其他判定为结构化的内容, 可以配置tokenizer限制最大token
+
+我的做法是: 将docling 切割的段落作为父索引, 将RecursiveCharacterTextSplitter设置200token作为子索引, 以提高vector命中的可靠性
