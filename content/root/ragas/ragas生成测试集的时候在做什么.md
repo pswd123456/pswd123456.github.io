@@ -1,6 +1,6 @@
 ---
 date created: 12月11日 , 23:8 , 2025
-date modified: 12月11日 , 23:11 , 2025
+date modified: 12月13日 , 20:52 , 2025
 ---
 
 这就触及到了 Ragas `TestsetGenerator` 的核心本质。您的直觉非常敏锐，**这个理解是准确的，但方向是“反”的**。

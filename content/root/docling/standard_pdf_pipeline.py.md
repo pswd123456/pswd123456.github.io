@@ -1,6 +1,6 @@
 ---
 date created: 12月7日 , 15:21 , 2025
-date modified: 12月11日 , 22:59 , 2025
+date modified: 12月13日 , 20:51 , 2025
 ---
 
 第四阶段我们进入“引擎室”，剖析 `docling` 最核心的 **`StandardPdfPipeline`**。

@@ -1,6 +1,6 @@
 ---
 date created: 12月9日 , 17:22 , 2025
-date modified: 12月13日 , 18:29 , 2025
+date modified: 12月13日 , 20:50 , 2025
 ---
 
 ## 简介
@@ -581,4 +581,4 @@ These keys indicate how many columns and rows, respectively, a particular table 
 
 这种方式我觉得比Ragas来的成本低而且效果不会太差, ragas主要是用了公式来量化结果, 用了知识谱图提取来提高问题的质量
 
-当然, 依赖于使用的LLM自带的RAG的水平以及多模态能力, 和ragas比起来会有覆盖率和专业度的区别, 如果想要发现宏观方向的优化结果这也不失为一种性价比高的办法
+当然, 依赖于使用的LLM多模态能力, 和ragas比起来会有覆盖率和专业度的区别, 如果想要发现宏观方向的优化结果这也不失为一种性价比高的办法
