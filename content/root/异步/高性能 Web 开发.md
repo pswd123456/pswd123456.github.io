@@ -1,6 +1,6 @@
 ---
 date created: 12月13日 , 3:20 , 2025
-date modified: 12月13日 , 4:25 , 2025
+date modified: 12月13日 , 18:59 , 2025
 ---
 
 这正是高性能 Python 后端的"深水区"。
@@ -73,8 +73,6 @@ async def greenlet_spawn(fn, *args, **kwargs):
 **实战启示：** 既然 ORM 构建过程涉及 CPU 计算且在 Greenlet 中运行，**如果你的 SQL 构建逻辑极其复杂（几千行），它依然会阻塞 Event Loop 一小会儿**，因为它本质上是在主线程中切换 CPU 上下文。
 
 ---
-
-[[greenlet, sqlalchemy, asyncpg]]的简介
 
 ## 2. 速度之王：[[asyncpg]] 的协议层源码
 
@@ -216,8 +214,3 @@ async def get_db():
     
 3. **AsyncAdaptedQueuePool** 利用 `asyncio.Condition` 实现了非阻塞的连接获取。
 
-下一步：
-
-现在数据层打通了，我们需要处理 Web 层最复杂的逻辑：FastAPI 的依赖注入系统（Dependency Injection）。这里有你之前关心的 Depends 源码，以及它如何解析我们在 get_db 中写的 yield。
-
-是否继续前往 **[[FastAPI Depends]] 的源码深度解析**？

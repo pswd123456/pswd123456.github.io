@@ -1,13 +1,9 @@
 ---
 date created: 12月13日 , 3:16 , 2025
-date modified: 12月13日 , 4:39 , 2025
+date modified: 12月13日 , 19:31 , 2025
 ---
 
-好的，让我们正式开启 **第一阶段：坚实的异步基石**。
-
-这一阶段的核心在于理解：**在单线程的 Event Loop 中，如何安全地运行同步阻塞代码？**
-
-我们将深入 Python 3.9+ 引入的 `asyncio.to_thread` 的源码。这段源码虽短，但包含了很多高阶 Python 并发设计的细节：`ContextVars`（上下文变量）的传递、偏函数（Partial）的应用以及与线程池的交互。
+**以下内容偏向于底层实现
 
 ---
 
@@ -174,11 +170,3 @@ async def process_video():
     # 不使用 to_thread，而是手动指定 executor
     await loop.run_in_executor(heavy_executor, tough_function)
 ```
-
----
-
-下一步：
-
-既然理解了 to_thread 和 ContextVars 的源码机制，我们可以进入 第二阶段：FastAPI 的核心。
-
-你想先看 **FastAPI 是如何利用 `anyio` 和 `starlette` 构建底层的**，还是直接切入 **FastAPI 那个复杂的依赖注入（Dependency Injection）系统的源码**？
