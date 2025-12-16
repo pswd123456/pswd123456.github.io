@@ -1,6 +1,6 @@
 ---
 date created: 12月13日 , 23:29 , 2025
-date modified: 12月14日 , 1:13 , 2025
+date modified: 12月14日 , 23:32 , 2025
 ---
 
 LangGraph 是一个用于构建有状态、多角​​色应用程序的库，其核心深受 Google Pregel 图计算模型的启发。
